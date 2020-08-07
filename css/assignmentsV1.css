@@ -1,0 +1,49 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25pt;
+    width:100%;
+	margin-top:5%;
+}
+header{
+    font-size: larger;
+	
+}
+section{
+	
+	border:10pt rgb(0, 102, 128);
+	padding:20px;
+    text-align:center;
+    overflow: auto;
+    
+}
+section:hover{
+    animation:rock 1s infinite;
+}
+h1,h2, h3{
+    color: red;
+    font-size: 35pt;
+    text-shadow: slategrey;
+    width: 0.2em;
+    padding: .5%;
+    position: sticky;
+    animation: alternate ;
+    animation-fill-mode: backwards;
+}
+a:link{
+    color: purple;
+    text-decoration: underline;
+}
+a:visited {
+    color: orangered;
+    text-decoration: underline;
+}
+a:hover{
+    color:rgb(151, 68, 151);
+    background-color: whitesmoke;
+    text-decoration: underline;
+}
+a:active{
+    color: rgb(83, 5, 5);
+    text-decoration: none;
+}
+

@@ -1,0 +1,206 @@
+﻿body {
+    font-family:12pt;
+    font: monospace; 
+	margin:auto;
+	padding:0;
+	border:0;
+	background-color:rgb(179, 171, 171);
+	display:flex;
+	flex-direction:column;
+    background:url('media/UsFix.png');
+    position:sticky;
+    background-position:left;
+    background-repeat:no-repeat;
+    box-sizing: border-box;
+   }
+nav {
+    margin-left:40px;
+    margin-top:0px;
+}
+nav ul {
+    background: linear-gradient(0deg, white, red, white);
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.15);
+    padding: 0 20px;
+    border-radius: 10px;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    color:white;
+    font-weight:900;
+}
+nav ul li {
+    display:inline-table;
+}
+nav ul li:hover {
+    background: radial-gradient(white,red);
+}
+nav ul li a {
+    display: block;
+    padding: 25px 40px;
+    color:white;
+    text-decoration: none;
+}
+nav ul li:hover a {
+    color:black;
+    text-decoration: none;
+}
+nav ul li:hover > ul {
+    display:flex;
+    flex-direction:column;
+}
+nav ul ul {
+    display: none;
+    background:(white, red);
+    border-radius: 0px;
+    padding: 0px;
+    position: absolute;
+    z-index:10;
+}
+nav ul ul li {
+    display:block;
+    border-top: 1px solid #757575;
+    border-bottom: 1px solid #757575;
+    position: relative;
+    text-align:left;
+}
+nav ul ul li a {
+    padding: 15px 40px;
+    color: #757575;
+}
+nav ul ul li a:hover {
+    background: black;
+    color:rgba(197, 45, 45, 0.568);
+}
+section{
+	margin-left:15%;
+	max-width:600px;
+}
+section a:link { 
+    text-decoration:none;
+    font-weight:bold;
+    color:red;
+}
+section a:hover{ 
+    text-decoration:none;
+}
+section a:active{ 
+    text-decoration:none;
+}
+section a:visited{ 
+    text-decoration:none;
+}
+::-moz-list-bullet{
+    color: red;
+    font-size: 1.2em;
+}
+svg{
+    font-style:arial ;
+    font-size: 12pt;
+    color:blue
+}
+h1{
+   font-size:18pt; 
+   color: black;
+   font-family: Arial, Helvetica, sans-serif;
+   padding:40px ;
+}
+h2{
+    font-size: 15pt; 
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:40px ;
+ }
+ h3{
+    font-size: 12pt; 
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+.wrapper{
+    display:grid;
+    grid-row: 10px 10px;
+}
+footer{
+    display: grid;
+    position:bottom ;
+    justify-content: end;
+    color: #757575;
+    text-align: right;
+    font-size: 12px;
+    padding: 15px;
+    opacity:.8;
+    margin-top:45%;
+    }
+.icon-bar {
+        width: 20%; /* Full-width */
+        background-color: darkred; 
+        overflow: auto; /* Overflow due to float */
+    }
+    
+    .icon-bar a {
+        float: left; /* Float links side by side */
+        text-align: center; /* Center-align text */
+        width: 20%; /* Equal */
+        padding: none; /**/
+        transition: all 0.3s ease; /* Add transition for hover effects */
+        color: white; /* White text color */
+        font-size: 36px; /* Increased font size */
+    }
+    
+    .icon-bar a:hover {
+        background-color: #000; /* Add a hover color */
+    }
+}	
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%; /* this is being overridden in tablet and desktop */
+    float:left; /* setting defaults for everything including tablet and desktop */
+    padding:15px; /* setting defaults for everything including tablet and desktop */
+
+}
+@media only screen and (min-width: 600px) {
+/* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+/* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    body{
+        font:12pt Verdana, Arila, Georgia, sans-serif; 
+        margin:auto;
+        padding:0;
+        border:0;
+        background-color:rgb(179, 171, 171);
+        display:flex;
+        flex-direction:column;
+        background:url('../media/Us.JPG');
+        background-position:center;
+        background-repeat:no-repeat;
+
+        min-height:900px;	
+    }
+       
+    
+}
+ 

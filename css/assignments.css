@@ -1,0 +1,128 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25pt;
+    width:100%;
+	margin-top:5%;
+}
+header{
+    font-size: larger;
+	
+}
+section{
+	
+	border:10pt rgb(0, 102, 128);
+	padding:20px;
+    text-align:center;
+    overflow: auto;
+    
+}
+section:hover{
+    animation:rock 1s infinite;
+}
+h1,h2, h3{
+    color: red;
+    font-size: 35pt;
+    text-shadow: slategrey;
+    width: 0.2em;
+    padding: .5%;
+    text-align: center;
+    position: sticky;
+    animation: alternate ;
+    animation-fill-mode: backwards;
+}
+nav {
+	margin:50px auto; 
+	text-align: center;
+}
+nav ul {
+    background: linear-gradient(0deg, white, rgb(192, 85, 103), white); 
+	box-shadow: 6px 6px 6px rgba(0,0,0,0.15);
+	padding: 0 20px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	color:black;
+	font-weight:900;
+	width:100%;
+	display:inline-table;
+}
+nav ul li {
+	display:inline-table;
+}
+nav ul li a {
+	display: block; 
+	padding: 25px 40px;
+	color:#808080; 
+	text-decoration: none;
+}
+nav ul li:hover {
+    background: linear-gradient(180deg, white, #7891ff, rgb(229, 185, 255)); 
+}
+nav ul li:hover a {
+	color:#757575;
+}
+nav ul li:hover > ul {
+	display:flex;
+	flex-direction:column;
+	width:30%;
+}
+nav ul ul {
+	display: none;
+    background: linear-gradient(180deg, white,  rgb(216, 117, 125)); 
+	border-radius: 0px; 
+	padding: 0;
+	position: absolute; 
+	z-index:10;
+}
+nav ul ul li {
+	display:block; 
+	border-top: 1px solid #757575;
+	border-bottom: 1px solid #757575; 
+	position: relative;
+}
+nav ul ul li a {
+	padding: 15px 40px;
+	color: #757575;
+}	
+nav ul ul li a:hover {
+	background: rgb(187, 56, 56);
+	color:rgb(211, 73, 73);
+}
+footer{
+    margin-top:200px;
+}
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: rgb(202, 193, 193);
+    overflow: auto; /* Overflow due to float */
+}
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font size */
+}
+.icon-bar a:hover {
+    background-color: #000; purple:
+}
+a:link{
+    color: purple;
+    text-decoration: underline;
+}
+a:visited {
+    color: orangered;
+    text-decoration: underline;
+}
+a:hover{
+    color:rgb(151, 68, 151);
+    background-color: whitesmoke;
+    text-decoration: underline;
+}
+a:active{
+    color: rgb(83, 5, 5);
+    text-decoration: none;
+}
+

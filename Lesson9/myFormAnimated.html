@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>The list</title>
+<style type="text/css">
+@import url(https://fonts.googleapis.com/css2?family=Anton);
+body {
+    font-family: "Lucida Grande",
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    color: black;
+    font-size: 14pt;
+    background-color: rgb(207, 196, 196);
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+}
+h1 {
+    position:relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    text-align: center;
+    color: black;
+    font-weight: 900;
+    text-shadow: 1px 1px white;
+    width: 60%;
+    background-color: gray;
+    border-radius: 20px;
+    opacity: .80;
+    animation:mymove 10s;
+    animation-fill-mode:forwards;
+}
+legend {
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: black;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+    box-shadow: 2px 2px red;
+    background-color: white;
+}
+label {
+    text-align: right;
+    width: 150px;
+    float: left;
+    padding-right: 10px;
+    color: black;
+    font-size: 12pt;
+    vertical-align: text-top;
+}
+p {
+    font-weight: 900;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+fieldset {
+    padding: 1%;
+    flex: 1;
+    min-width: 400px;
+    background-color: white;
+    opacity: .9;
+    margin: 10px;
+    border: 4px groove rgb(219, 93, 55);
+    overflow: auto;
+}
+.inputButton {
+    font-size: 12pt;
+    width: 100px;
+    height: 30px;
+    font-size: 12pt;
+    background-color: rgb(145, 118, 130);
+    color: white;
+    font-weight: 900;
+    margin-top: 50px;
+    box-shadow: 2px 2px 2px black;
+    text-align: center;
+    transition: width 1s, height 1s, transform 1s;
+    transition-timing-function:ease-in;
+}
+.inputButton:hover{
+    width: 300px;
+    height: 90px;
+    color:black;
+    transform: rotate(360deg);
+}
+input {
+    text-align: left;
+    width: 160px;
+    font-size: 12pt;
+    color: black;
+}
+.shortinputButton {
+    width: 20px;
+    text-align: left;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+@keyframes mymove {
+    from {left: -30%;}
+    to {left: 20%;}
+  }
+}
+@keyframes slidein {
+from {
+    margin-left:200%;
+    width: 300%;}
+  }
+to {
+    margin-left: 0%;
+    width: 100%;
+}
+  </style>
+</head>
+<body>
+<article>
+  <h1> The List</h1>
+  <form name="confirmation" id="confirmation" action="https://lisabalbach.com/CIT180/Lesson8/FormProcessor.html" method="get" >
+    <input type="hidden" name="mailto" value="mailto:lbalbach@nmc.edu">
+    <fieldset class="center">
+      <legend>Address Information:</legend>
+      <p>
+        <label for="name"  >Name:</label>
+        <input type="text" id="name" name="name" size="30"  placeholder="Name" required autofocus/>
+        <br />
+      </p>
+      <p>
+        <label for="address"  >Address:</label>
+        <input  type="text" id="address" name="address" size="50" placeholder="Address" required />
+        <br/>
+      </p>
+      <p>
+        <label for="city"  >City:</label>
+        <input type="text"  id="city" name="city" size="18" placeholder="City" required/>
+      </p>
+      <p>
+        <label for="state"  >State:</label>
+        <input type="text"  id="state" name="state" size="5" value="MI" placeholder="State" required />
+      </p>
+      <p>
+        <label for="zip"   >Zip:</label>
+        <input type="text"  id="zip" name="zip" size="8" placeholder="Zip" required/>
+        <br/>
+      </p>
+      <p>
+        <label for="telephone"  >Cell#:</label>
+        <input type="tel" id="telephone"  name="telephone" size="30"  placeholder="(222)555-5555" required/>
+        <br/>
+      </p>
+      <p>
+        <label for="Email"  >E-Mail Address:</label>
+        <input type="email" id="email"  name="email" size="50"  placeholder="name@_mail.com" required/>
+      </p>
+      
+    </fieldset>
+    <fieldset class="center">
+      <legend>Survey Information:</legend>
+      <div style="padding-left:30px;">
+        <table style="border:none;min-width:400px;"	>
+          <tr style="vertical-align:top;">
+            <td><h3>Family +ones</h3>
+              <p>
+                <label for="1">1</label>
+                <input type="radio" name="options" id="1" value="1" class="shortinputButton" />
+              </p>
+              <p>
+                <label for="2">2</label>
+                <input type="radio" name="options" id="2" value="2" class="shortinputButton"/>
+              </p>
+              <p>
+                <label for="3">3</label>
+                <input type="radio" name="options" id="3" value="3" class="shortinputButton"/>
+              </p>
+              <p>
+                <label for="4">4</label>
+                <input type="radio" name="options" id="4" value="4" class="shortinputButton"/>
+              </p>
+              <p>
+                <label for="5">5</label>
+                <input type="radio" name="options" id="5" value="5" class="shortinputButton"/>
+              </p>
+              <p>
+                <label for="6+">6+</label>
+                <input type="radio" name="options" id="6+" value="6+" class="shortinputButton"/>
+              </p></td>
+            <td><h3>Before the day:</h3>
+              <p>
+                <input type="checkbox" name="Boxes" id="Dress" value="Dress" class="shortinputButton">
+                <label for="Dress">Dress</label>
+              </p>
+              <p>
+                <input type="checkbox" name="Boxes" id="Cake" value="Cake" class="shortinputButton">
+                <label for="Cake">Cake</label>
+              </p>
+              <p>
+                <input type="checkbox" name="Boxes" id="flowers" value="flowers" class="shortinputButton">
+                <label for="flowers">flowers</label>
+              </p>
+              </td>
+          </tr>
+        </table>
+      </div>
+    </fieldset>
+    <fieldset class="center">
+      <legend>Class Meeting Days &amp; Times:</legend>
+      <div style="padding-left:30px;">
+        <p>Please select the item you would like to eat</p>
+        <p>Food choice:<br>
+          <select id="select1" name="select1" size="5" multiple="multiple" style="width:200px;" >
+            <option value="Steak">Steak</option>
+            <option value="Fish">Fish</option>
+            <option value="Chicken">Chicken</option>
+            <option value="Chicken and Steak">Chicken and Steak</option>
+             </select>
+        </p>
+        <p>Drinks:<br>
+          <input  list="select2" id="credits" name="credits" multiple="multiple" placeholder="Please make a selection" style="width:200px;">
+          <datalist id="select2">
+            <option value="Water"></option>
+            <option value="Pop"></option>
+            <option value="Juice"> </option>
+            <option value="Bar"></option>
+            </datalist>
+        </p>
+      </div>
+    </fieldset>
+    <fieldset class="center">
+      <legend>Comments:</legend>
+      <p>Please enter your suggestions in the space provided:<br/>
+        <textarea rows="10" cols="50" id="TextArea" name="TextArea" wrap="soft" style="font-size:14pt;"></textarea>
+      </p>
+      <p style="padding-bottom:20px; text-align:center;">
+        <input type="submit" class="inputButton" value="Submit"   style="margin-right:20px"/>
+        <input type="reset"  class="inputButton" value="Reset" />
+        <input type="hidden" name="mailto" id="mailto" value="mailto:Thiese@nmc.edu">
+      </p>
+    </fieldset>
+  </form>
+</article>
+</body>
+</html>
